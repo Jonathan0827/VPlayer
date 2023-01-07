@@ -1,1 +1,1 @@
-# VideoPlayer for iOS, macOS
+# VideoPlayer for iOS (macOS will be supported right after iOS release)
