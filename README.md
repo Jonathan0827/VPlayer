@@ -6,7 +6,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://raw.githubusercontent.com/Jonathan0827/VPlayer/main/Screenshot.PNG?token=GHSAT0AAAAAABXHE453PRJJT7MQH4ZZKDZAY52CGUA" alt="project-screenshot" width="400" height="400/">
+<img src="/Screenshot.PNG" alt="project-screenshot" />
 
   
   
