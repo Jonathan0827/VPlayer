@@ -21,7 +21,8 @@
 
 ![Downloads](https://img.shields.io/github/downloads/Jonathan0827/VPlayer/total) ![Contributors](https://img.shields.io/github/contributors/Jonathan0827/VPlayer?color=dark-green) ![Issues](https://img.shields.io/github/issues/Jonathan0827/VPlayer) 
 ## Alert
-<h1>This app doesn't have any features now.</h1>
+### This app doesn't have any features *now*.
+
 ## Built With
 
 Xcode
