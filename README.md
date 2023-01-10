@@ -1,22 +1,61 @@
-<h1 align="center" id="title">VPlayer</h1>
+<br/>
+<p align="center">
+  <a href="https://github.com/Jonathan0827/VPlayer">
+    <img src="/VideoPlayer/VideoPlayer/Assets.xcassets/icon.imageset/icon.png" alt="Logo" width="80" height="80">
+  </a>
 
-<p align="center"><img src="/VideoPlayer/VideoPlayer/Assets.xcassets/icon.imageset/icon.png?token=GHSAT0AAAAAABXHE452GHBJX3XUFPW7TQXUY52B7FA" alt="project-image"></p>
+  <h3 align="center">VPlayer</h3>
 
-<p id="description">Video player for iOS</p>
+  <p align="center">
+    A simple video player for iOS
+    <br/>
+    <br/>
+    <a href="https://github.com/Jonathan0827/VPlayer#installation"><strong>Installation Guide</strong></a>
+    <br/>
+    <br/>
+    <a href="https://github.com/Jonathan0827/VPlayer/issues">Report Issue</a>
+    .
+    <a href="https://github.com/Jonathan0827/VPlayer/discussions/new?category=request-feature">Request Feature</a>
+  </p>
+</p>
 
-<h2>Project Screenshots:</h2>
+![Downloads](https://img.shields.io/github/downloads/Jonathan0827/VPlayer/total) ![Contributors](https://img.shields.io/github/contributors/Jonathan0827/VPlayer?color=dark-green) ![Issues](https://img.shields.io/github/issues/Jonathan0827/VPlayer) 
+## Alert
+<h1>This app doesn't have any features now.</h1>
+## Built With
 
-<img src="/Screenshot.PNG" alt="project-screenshot" />
+Xcode
 
-  
-  
-<h2>🧐 Features</h2>
+## Getting Started
 
-Here're some of the project's best features:
+This will tell you how to install this app
 
-*   Play videos from directory
-*   Play video directly from file
+### Prerequisites
 
-<h2>🛠️ Installation Steps:</h2>
+Requirements
+- Xcode
+- iPhone (iPad and Mac are not supported. But Mac will be supported soon.)
 
-<p>1. Build app with Xcode</p>
+### Installation
+
+1. Clone this repository
+2. Open terminal and type
+```
+     cd /path/to/repository/VideoPlayer
+     xed .
+```
+- If your Mac doesn't have Xcode CLT, type this to terminal.
+```
+     xcode-select --install
+```
+3. Go to Signing & Capabilities setting and change 'team' and Bundle Identifier
+
+## Usage
+
+- Play videos in directory
+- Play video directly with file
+- Play video online
+
+## Authors
+
+* **Jonathan0827** - Student of South Korea - [Jonathan0827](https://github.com/Jonathan0827/) 
