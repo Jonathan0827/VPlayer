@@ -1,13 +1,13 @@
 //
-//  VideoPlayerUITestsLaunchTests.swift
-//  VideoPlayerUITests
+//  VPlayerUITestsLaunchTests.swift
+//  VPlayerUITests
 //
-//  Created by 임준협 on 2023/01/06.
+//  Created by 임준협 on 2023/01/11.
 //
 
 import XCTest
 
-final class VideoPlayerUITestsLaunchTests: XCTestCase {
+final class VPlayerUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

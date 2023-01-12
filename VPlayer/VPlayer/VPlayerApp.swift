@@ -1,14 +1,14 @@
 //
-//  VideoPlayerApp.swift
-//  VideoPlayer
+//  VPlayerApp.swift
+//  VPlayer
 //
-//  Created by 임준협 on 2023/01/06.
+//  Created by 임준협 on 2023/01/11.
 //
 
 import SwiftUI
 
 @main
-struct VideoPlayerApp: App {
+struct VPlayerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

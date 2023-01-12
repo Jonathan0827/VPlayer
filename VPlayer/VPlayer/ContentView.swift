@@ -6,7 +6,7 @@
 //
 import SwiftUI
 import AVKit
-import AVFoundation
+import Foundation
 
 struct ContentView: View{
     @AppStorage("_isFirstLaunching") var isFirstLaunching: Bool = true
@@ -211,90 +211,7 @@ struct FileView: View {
     }
 }
 
-struct LinkView: View {
-    @AppStorage("_isFirstLaunching") var isFirstLaunching: Bool = true
-    @AppStorage("_viewLink") var viewLink: Bool = false
-    @State var url: String = ""
-    @State var validVideo: Bool = false
-    @State var unvalidVideo: Bool = false
-    var body: some View {
-        NavigationView{
-            VStack{
-                HStack{
-                    TextField("URL", text: $url)
-                        .padding()
-//                        .foregroundColor(Color("scheme"))
-                        .overlay(
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .stroke(Color.primary, lineWidth: 3)
-                                )
-                        .padding(.leading)
-                    if url != ""{
-                        if validateURL(urlString: url) == false{
-                            Button(action: {}, label: {Image(systemName: "play.circle.fill")})
-                                .foregroundColor(Color("scheme"))
-                                .padding()
-                                .background(.secondary)
-                                .cornerRadius(15)
-                                .padding(.trailing)
-                                .disabled(true)
-                        } else {
-                            Button(action: {
-                                let asset = AVAsset(url: URL(string: url)!)
-                                if asset != nil {
-                                    validVideo.toggle()
-                                } else {
-                                    unvalidVideo.toggle()
-                                }
-                            }, label: {Image(systemName: "play.circle.fill")})
-                            .alert(isPresented: $validVideo){
-                                Alert(title: Text("Valid video"), dismissButton: .default(Text("Dismiss")))
-                            }.alert(isPresented: $unvalidVideo){
-                                Alert(title: Text("Unvalid video"), dismissButton: .default(Text("Dismiss")))
-                            }
-                                .foregroundColor(Color("scheme"))
-                                .padding()
-                                .background(.primary)
-                                .cornerRadius(15)
-                                .padding(.trailing)
-                                
-                        }
-                        
-                    }else {
-                        Button(action: {}, label: {Image(systemName: "play.circle.fill")})
-                            .foregroundColor(Color("scheme"))
-                            .padding()
-                            .background(.secondary)
-                            .cornerRadius(15)
-                            .padding(.trailing)
-                            .disabled(true)
-                            
-                    }
 
-                    
-                        
-                }
-            }
-            .navigationTitle("Stream from link")
-            .navigationBarItems(leading: Button(action: {viewLink.toggle()}, label: {
-                Image(systemName: "xmark.circle.fill")
-                .foregroundColor(.primary)}))
-            .navigationBarItems(trailing:NavigationLink(destination: SettingsView(isFirstLaunching: $isFirstLaunching), label: {Image(systemName: "gearshape.fill").foregroundColor(.primary)}))
-            .fullScreenCover(isPresented: $isFirstLaunching) {
-                OnboardingTabView(isFirstLaunching: $isFirstLaunching)
-            }
-        }
-        
-    }
-    func validateURL (urlString: String?) -> Bool {
-        if let urlString = urlString {
-            if let url = NSURL(string: urlString) {
-                return UIApplication.shared.canOpenURL(url as URL)
-            }
-        }
-        return false
-    }
-}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

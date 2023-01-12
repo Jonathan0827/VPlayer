@@ -1,13 +1,13 @@
 //
-//  VideoPlayerUITests.swift
-//  VideoPlayerUITests
+//  VPlayerUITests.swift
+//  VPlayerUITests
 //
-//  Created by 임준협 on 2023/01/06.
+//  Created by 임준협 on 2023/01/11.
 //
 
 import XCTest
 
-final class VideoPlayerUITests: XCTestCase {
+final class VPlayerUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
