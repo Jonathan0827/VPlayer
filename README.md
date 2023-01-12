@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/Jonathan0827/VPlayer">
-    <img src="/VideoPlayer/VideoPlayer/Assets.xcassets/icon.imageset/icon.png" alt="Logo" width="80" height="80">
+    <img src="/VPlayer/VPlayer/Assets.xcassets/icon.imageset/icon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">VPlayer</h3>
