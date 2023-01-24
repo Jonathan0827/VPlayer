@@ -12,15 +12,19 @@ struct LinkPlayerView: View {
     let inputURL: String
     
     var body: some View {
-        VideoPlayer(player: AVPlayer(url: URL(string: inputURL)!))
+        NavigationView{
+            ZStack{
+                VideoPlayer(player: AVPlayer(url: URL(string: inputURL)!))
+                    .edgesIgnoringSafeArea([.all])
+            }
+        }
     }
 }
 
 struct LinkView: View {
     @AppStorage("_isFirstLaunching") var isFirstLaunching: Bool = true
-    @AppStorage("_viewLink") var viewLink: Bool = false
+    @AppStorage("_viewLink") var viewLink: Bool = true
     @State var url: String = ""
-    @State var validLink: Bool = false
     var body: some View {
         NavigationView{
             VStack{
@@ -42,14 +46,13 @@ struct LinkView: View {
                                 .padding(.trailing)
                                 .disabled(true)
                         } else {
-                            Button(action: {
-                                validLink.toggle()
-                            }, label: {Image(systemName: "play.circle.fill")})
-                                .foregroundColor(Color("scheme"))
-                                .padding()
-                                .background(.primary)
-                                .cornerRadius(15)
-                                .padding(.trailing)
+                            NavigationLink(destination: LinkPlayerView(inputURL: url), label: {Image(systemName: "play.circle.fill")
+                                    })
+                            .foregroundColor(Color("scheme"))
+                            .padding()
+                            .background(.primary)
+                            .cornerRadius(15)
+                            .padding(.trailing)
                         }
                         
                     }else {
@@ -75,9 +78,7 @@ struct LinkView: View {
             .fullScreenCover(isPresented: $isFirstLaunching) {
                 OnboardingTabView(isFirstLaunching: $isFirstLaunching)
             }
-            .fullScreenCover(isPresented: $validLink) {
-                LinkPlayerView(inputURL: url)
-            }
+
         }
         
     }

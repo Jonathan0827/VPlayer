@@ -11,6 +11,7 @@
 		917B4A81296EF5E1008D01B0 /* settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B4A7D296EF5E1008D01B0 /* settings.swift */; };
 		917B4A82296EF5E1008D01B0 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B4A7E296EF5E1008D01B0 /* Onboarding.swift */; };
 		917B4A83296EF5E1008D01B0 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B4A7F296EF5E1008D01B0 /* LinkView.swift */; };
+		91C33DC6297F835F009AA497 /* FileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C33DC5297F835F009AA497 /* FileView.swift */; };
 		91EACDEE296EF56200CA9075 /* VPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EACDED296EF56200CA9075 /* VPlayerApp.swift */; };
 		91EACDF0296EF56200CA9075 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EACDEF296EF56200CA9075 /* ContentView.swift */; };
 		91EACDF2296EF56300CA9075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91EACDF1296EF56300CA9075 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		917B4A7D296EF5E1008D01B0 /* settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
 		917B4A7E296EF5E1008D01B0 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		917B4A7F296EF5E1008D01B0 /* LinkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
+		91C33DC5297F835F009AA497 /* FileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileView.swift; sourceTree = "<group>"; };
 		91EACDEA296EF56200CA9075 /* VPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EACDED296EF56200CA9075 /* VPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPlayerApp.swift; sourceTree = "<group>"; };
 		91EACDEF296EF56200CA9075 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				91EACDED296EF56200CA9075 /* VPlayerApp.swift */,
 				91EACDEF296EF56200CA9075 /* ContentView.swift */,
+				91C33DC5297F835F009AA497 /* FileView.swift */,
 				917B4A7C296EF5E1008D01B0 /* doc.swift */,
 				917B4A7F296EF5E1008D01B0 /* LinkView.swift */,
 				917B4A7E296EF5E1008D01B0 /* Onboarding.swift */,
@@ -273,6 +276,7 @@
 				917B4A80296EF5E1008D01B0 /* doc.swift in Sources */,
 				917B4A82296EF5E1008D01B0 /* Onboarding.swift in Sources */,
 				917B4A81296EF5E1008D01B0 /* settings.swift in Sources */,
+				91C33DC6297F835F009AA497 /* FileView.swift in Sources */,
 				917B4A83296EF5E1008D01B0 /* LinkView.swift in Sources */,
 				91EACDEE296EF56200CA9075 /* VPlayerApp.swift in Sources */,
 			);
@@ -447,7 +451,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.5.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathan.VPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -481,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.5.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathan.VPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
